@@ -14,6 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+// comment test
 
 Route::get('/all-products', function () { //example.com/all-products
     return view('all-products');

@@ -11,15 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-// comment test
-
-Route::get('/all-products', function () { //example.com/all-products
-    return view('all-products');
-});
-
-Route::get('/add-products', function () {
-    return view('add-products');
-});
+Route::get('/', 'PagesController@home');
+Route::get('/all-products', 'PagesController@allProducts');
+Route::get('/add-products', 'PagesController@addProducts');

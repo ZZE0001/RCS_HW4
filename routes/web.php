@@ -19,7 +19,7 @@ Route::post('/all-products', 'PagesController@store');
 
 Route::get('/{product}','PagesController@show');
 Route::get('/{product}/edit','PagesController@edit');
-Route::patch('/all-products','PagesController@update');
+Route::patch('/{product}','PagesController@update');
 Route::delete('/{product}','PagesController@destroy');
 
 // Since these methods are common there is a shortcut. Resource is a thing which we manipluate for example, Projects

@@ -50,18 +50,20 @@ class PagesController extends Controller
         return view('edit', compact('product'));
 
     }
-    public function update() {
-        dd('hello!'); //test, am i hitting this part of the code
-        // $product = \App\Product::find($id);
+    public function update($id) {
+        //dd('hello!'); //test, am i hitting this part of the code
+        //dd(request()->all()); // test fetch all updated fields
+        
+        $product = \App\Product::find($id);
 
-        // $product->sku = request('skufield');
-        // $product->name = request('namefield');
-        // $product->price_eur = request('pricefield');
-        // $product->type = request('typefield');
+        $product->sku = request('skufield');
+        $product->name = request('namefield');
+        $product->price_eur = request('pricefield');
+        $product->type = request('typefield');
 
-        // $product->save();
+        $product->save();
 
-        // return redirect('/all-products');
+        return redirect('/all-products');
     }
 
     public function show() {

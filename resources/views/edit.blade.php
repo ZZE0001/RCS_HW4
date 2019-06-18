@@ -6,7 +6,8 @@
 
     <h1>Edit Product</h1>
 
-<form method="POST" action="{{ $product->id }}">
+<form method="POST" action="/{{ $product->id }}">
+    {{-- form action should be {{ $product->id }} --}}
     {{-- we really want here PATCH request, please route accordingly --}}
     {{ method_field('PATCH') }}
 

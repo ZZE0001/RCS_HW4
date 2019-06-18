@@ -42,4 +42,34 @@ class PagesController extends Controller
         //redirect to all-products page via GET request by default
         return redirect('/all-products');
     }
+
+    public function edit($id) {
+        // return $id; //test
+        $product = \App\Product::find($id);
+
+        return view('edit', compact('product'));
+
+    }
+    public function update() {
+        dd('hello!'); //test, am i hitting this part of the code
+        // $product = \App\Product::find($id);
+
+        // $product->sku = request('skufield');
+        // $product->name = request('namefield');
+        // $product->price_eur = request('pricefield');
+        // $product->type = request('typefield');
+
+        // $product->save();
+
+        // return redirect('/all-products');
+    }
+
+    public function show() {
+
+    }
+
+    public function destroy() {
+
+    }
+
 }

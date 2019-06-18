@@ -14,12 +14,15 @@
 
         <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="{{ asset('/css/custom.css') }}">
-
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
+        <!-- CSS vendor -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css">
+        
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="{{ asset('/css/custom.css') }}">
+        
         <!-- Styles -->
         <style>
             html, body {

@@ -12,7 +12,7 @@
 
         <!-- Fav icon -->
 
-        <link rel="shortcut icon" href="{{ asset('img/favicon.png') }}">
+        <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
 
         <!-- Custom CSS -->
         <link rel="stylesheet" href="{{ asset('/css/custom.css') }}">

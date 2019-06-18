@@ -24,7 +24,7 @@
         <link rel="stylesheet" href="{{ asset('/css/custom.css') }}">
         
         <!-- Styles -->
-        <style>
+        {{-- <style>
             html, body {
                 background-color: #fff;
                 color: #636b6f;
@@ -75,11 +75,13 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
-        </style>
+        </style> --}}
     </head>
     <body>
 
-        {{-- <div class="container"> --}}
+        <div class="container">
+            <!-- in any file we can register a section for this content -->
+            @yield('content') 
 
             <div class="flex-center position-ref full-height">
                 @if (Route::has('login'))
@@ -96,26 +98,19 @@
                     </div>
                 @endif
 
-                
-
-                <div class="content"> 
-
+                <div class="content">
                     <div class="title m-b-md">
-                            Laravel - ZZZ
-                    </div>   
+                        Laravel - ZZZ
+                    </div>
 
                     <div class="links">
                         <a href="/">Home</a>
                         <a href="/all-products">All Products</a>
                         <a href="/add-products">Add Products</a>
                     </div>
-
-                    <!-- in any file we can register a section for this content -->
-                    @yield('content') 
-
                 </div>
             </div>
-        {{-- </div> --}}
+        </div>
        
         
 

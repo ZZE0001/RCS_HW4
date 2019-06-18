@@ -10,28 +10,36 @@
         {{-- special helper field for extra security --}}
         {{ csrf_field() }}
 
-        <div>
-            <input type="text" name="skufield" placeholder="SKU">
+        <div class="field">
+            <div class="control">
+                <input type="text" name="skufield" placeholder="SKU" class="input is-primary" required>
+            </div>
         </div>
 
-        <div>
-            <input type="text" name="namefield" placeholder="Name">
+        <div class="field">
+            <div class="control">
+                <input type="text" name="namefield" placeholder="Name" class="input is-info" required>
+            </div>
         </div>
 
-        <div>
-            <input type="number" name="pricefield" placeholder="Price in EUR" min="0" step=".01">
+        <div class="field">
+            <div class="control">
+                <input type="number" name="pricefield" placeholder="Price in EUR" min="0" step=".01" class="input is-success" required>
+            </div>
         </div>
 
-        <div>
-            <input type="text" name="typefield" placeholder="Type of product">
+        <div class="field">
+            <div class="control">
+                <input type="text" name="typefield" placeholder="Type of product" class="input is-warning" required>
+            </div>
         </div>
 
-        <div>
-            <button type="submit">Add Product</button>
+        <div class="field">
+            <div class="control">
+                <button type="submit" class="button">Add Product</button>
+            </div>
         </div>
-    
+        
     </form>
-
-    <h6>Designer should really work on this form :)</h6>
 
 @endsection

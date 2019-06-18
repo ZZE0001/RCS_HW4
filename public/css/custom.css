@@ -29,11 +29,18 @@
 #product-grid > .product-details {
     border: solid 1px #636b6f;
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 #product-grid > .product-details > div {
     margin:10px;
 }
 
+.control {
+    text-align: center;
+}
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) { 
     #product-grid {

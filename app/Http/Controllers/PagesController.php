@@ -12,7 +12,12 @@ class PagesController extends Controller
     }
 
     public function allProducts(){
-        return view('all-products');
+        
+        //fetch all products
+        $products = \App\Product::all();
+
+        // return view('all-products', ['products' => $products]);
+        return view('all-products', compact('products'));
     }
 
     public function addProducts(){

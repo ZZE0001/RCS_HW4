@@ -8,7 +8,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>@yield('title')</title>
+        <title>@yield('title') - Product Catalog</title>
+
+        <!-- Fav icon -->
+
+        <link rel="shortcut icon" href="{{ asset('img/favicon.png') }}">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="{{ asset('/css/custom.css') }}">
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -69,8 +76,8 @@
     </head>
     <body>
 
-    <!-- in any file we can register a section for this content -->
-    @yield('content') 
+        <!-- in any file we can register a section for this content -->
+        @yield('content') 
 
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
@@ -99,6 +106,8 @@
                 </div>
             </div>
         </div>
+
+       
         
 
     </body>

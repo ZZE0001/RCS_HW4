@@ -1,0 +1,45 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+/* #product-grid {
+    display: flex;
+    flex: auto;
+    flex-wrap: wrap;
+    column-gap: 50%;
+}
+#product-grid > .product-details {
+    border: solid 1px grey;
+    width: 20%;
+    margin: 5%;
+    text-align: center;
+}
+
+#product-grid > .product-details > div {
+    margin:10px;
+} */
+
+
+#product-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 5%;
+    grid-row-gap: 15%;
+}
+#product-grid > .product-details {
+    border: solid 1px #636b6f;
+    text-align: center;
+}
+#product-grid > .product-details > div {
+    margin:10px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+    #product-grid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-column-gap: 5%;
+        grid-row-gap: 15%;
+    }
+}

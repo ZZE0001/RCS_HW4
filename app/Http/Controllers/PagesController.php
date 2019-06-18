@@ -45,7 +45,7 @@ class PagesController extends Controller
 
     public function edit($id) {
         // return $id; //test
-        $product = \App\Product::find($id);
+        $product = \App\Product::findOrFail($id);
 
         return view('edit', compact('product'));
 
@@ -70,8 +70,11 @@ class PagesController extends Controller
 
     }
 
-    public function destroy() {
+    public function destroy($id) {
+        //dd('delete ' .$id); //test, am i hitting this part of the code
+        \App\Product::find($id)->delete();
 
+        return redirect('/all-products');
     }
 
 }

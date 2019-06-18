@@ -14,3 +14,5 @@
 Route::get('/', 'PagesController@home');
 Route::get('/all-products', 'PagesController@allProducts');
 Route::get('/add-products', 'PagesController@addProducts');
+//POST endpoint
+Route::post('/all-products', 'PagesController@store');

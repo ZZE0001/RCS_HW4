@@ -21,6 +21,25 @@ class PagesController extends Controller
     }
 
     public function addProducts(){
+        //simply loads a view
         return view('add-products');
+    }
+
+    public function store() {
+        // connects request
+        $product = new \App\Product();
+
+        $product->sku = request('skufield');
+        $product->name = request('namefield');
+        $product->price_eur = request('pricefield');
+        $product->type = request('typefield');
+
+        $product->save();
+        
+        //this is shortcut grab all info user inputs in the form within add-product page
+        // return request()->all();
+
+        //redirect to all-products page via GET request by default
+        return redirect('/all-products');
     }
 }

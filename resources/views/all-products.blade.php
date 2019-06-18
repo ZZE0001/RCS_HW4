@@ -12,7 +12,8 @@
             <div class="product-details">
                 <div> {{ $product->SKU }} </div>
                 <div> {{ $product->Name }} </div>
-                <div> {{ $product->Price_EUR }} </div>
+                <div> {{ $product->Price_EUR }} EUR </div>
+                <div> {{ $product->Type }} </div>
             </div>
         @endforeach
 

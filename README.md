@@ -14,3 +14,17 @@ ToDo:
 - Dropdown for Product Type input
 - Authentification
 - Mobile layout
+
+![alt text](https://github.com/ZZE0001/RCS_HW4/blob/master/public/img/Home.PNG)
+
+<hr>
+
+![alt text](https://github.com/ZZE0001/RCS_HW4/blob/master/public/img/AllProducts.PNG)
+
+<hr>
+
+![alt text](https://github.com/ZZE0001/RCS_HW4/blob/master/public/img/UpdateProduct.PNG)
+
+<hr>
+
+![alt text](https://github.com/ZZE0001/RCS_HW4/blob/master/public/img/AddProduct.PNG)

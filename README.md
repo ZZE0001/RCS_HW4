@@ -15,6 +15,8 @@ ToDo:
 - Authentification
 - Mobile layout
 
+Screenshots:
+
 ![alt text](https://github.com/ZZE0001/RCS_HW4/blob/master/public/img/Home.PNG)
 
 <hr>

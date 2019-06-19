@@ -13,3 +13,4 @@ ToDo:
 - Validation on form submit
 - Dropdown for Product Type input
 - Authentification
+- Mobile layout
